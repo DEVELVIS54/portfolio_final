@@ -124,7 +124,7 @@
             min-height: 100vh;
             display: flex;
             align-items: center;
-            padding-top: 120px;
+            padding-top: 140px;
             text-align: center;
         }
         
@@ -135,16 +135,16 @@
             gap: 40px;
         }
         
-        /* Photo agrandie à 260px x 260px */
+        /* Photo agrandie au double (520px x 520px) */
         .hero-image {
-            width: 260px;
-            height: 260px;
+            width: 520px;
+            height: 520px;
             border-radius: 50%;
             overflow: hidden;
-            border: 4px solid var(--orange);
+            border: 6px solid var(--orange);
             background: var(--orange);
             animation: float-hero 3s ease-in-out infinite;
-            box-shadow: 0 12px 32px rgba(232, 98, 44, 0.2);
+            box-shadow: 0 16px 48px rgba(232, 98, 44, 0.25);
         }
         
         @keyframes float-hero {
@@ -575,10 +575,12 @@
             display: flex;
             justify-content: space-between;
             gap: 60px;
+            flex-wrap: wrap;
         }
         
         .footer-col {
             flex: 1;
+            min-width: 200px;
         }
         
         .footer-col h4 {
@@ -593,6 +595,7 @@
             font-size: 14px;
             margin-bottom: 12px;
             color: #B3ADAA;
+            display: block;
         }
         
         .footer-col a:hover {
@@ -638,14 +641,18 @@
                 font-size: 28px;
             }
             .hero-image {
-                width: 200px;
-                height: 200px;
+                width: 300px;
+                height: 300px;
             }
             .hero-cta {
                 flex-direction: column;
             }
             .projects-grid {
                 grid-template-columns: 1fr;
+            }
+            .footer-inner {
+                flex-direction: column;
+                gap: 30px;
             }
         }
     </style>
@@ -671,11 +678,12 @@
     <header class="hero">
         <div class="wrap hero-content">
             <div class="hero-image">
+                <!-- Photo de profil au double de la taille initiale avec le nom exact -->
                 <img src="WhatsApp Image 2026-08-05 at 00.08.55.jpeg" alt="Elvis Sebgo">
             </div>
             <div class="hero-text">
                 <h1>Développeur Full-Stack <span class="highlight">Web & Mobile</span></h1>
-                <p>U-AUBEN • Licence 3 en Génie Logiciel (en cours) — Conception d'applications complètes : backends Django et Spring Boot, applications mobiles Flutter, et solutions d'IA intégrées.</p>
+                <p>U-AUBEN • Licence 3 en Génie Logiciel — Conception d'applications complètes : backends Django et Spring Boot, applications mobiles Flutter, et solutions d'IA intégrées.</p>
                 <div class="hero-cta">
                     <a href="#projets" class="btn btn-primary">Voir mes projets</a>
                     <a href="mailto:develvis76@gmail.com" class="btn btn-secondary">Discuter d'une opportunité</a>
@@ -692,21 +700,21 @@
                     <h2>Profil Professionnel</h2>
                 </div>
                 <div class="presentation-content">
-                    <p class="presentation-intro">Développeur full-stack web et mobile junior, orienté vers le développement d'applications et l'intelligence artificielle[cite: 1].</p>
-                    <p class="presentation-text">Conçoit des applications complètes : backends Django et Spring Boot, applications mobiles Flutter, bases de données PostgreSQL, ainsi que des solutions d'IA intégrant des APIs LLM, le RAG et la recherche vectorielle (pgvector), déployées avec Docker et CI/CD[cite: 1]. Rigoureux, autonome et adaptable, il est animé par l'apprentissage continu et le travail en équipe[cite: 1].</p>
+                    <p class="presentation-intro">Développeur full-stack web et mobile junior, orienté vers le développement d'applications et l'intelligence artificielle.</p>
+                    <p class="presentation-text">Conçoit des applications complètes : backends Django et Spring Boot, applications mobiles Flutter, bases de données PostgreSQL, ainsi que des solutions d'IA intégrant des APIs LLM, le RAG et la recherche vectorielle (pgvector), déployées avec Docker et CI/CD. Rigoureux, autonome et adaptable, il est animé par l'apprentissage continu et le travail en équipe.</p>
                     
                     <div class="presentation-highlights">
                         <div class="highlight-item">
                             <span class="highlight-label">Formation</span>
-                            <span class="highlight-value">Licence 3 en Génie Logiciel — U-AUBEN (en cours)[cite: 1]</span>
+                            <span class="highlight-value">Licence 3 en Génie Logiciel — U-AUBEN</span>
                         </div>
                         <div class="highlight-item">
                             <span class="highlight-label">Formation Pratique</span>
-                            <span class="highlight-value">Formation ASI Hub en cours (ASI BF)[cite: 1]</span>
+                            <span class="highlight-value">Formation ASI Hub (ASI BF)</span>
                         </div>
                         <div class="highlight-item">
                             <span class="highlight-label">Localisation</span>
-                            <span class="highlight-value">Ouagadougou, Burkina Faso[cite: 1]</span>
+                            <span class="highlight-value">Ouagadougou, Burkina Faso</span>
                         </div>
                     </div>
                 </div>
@@ -795,11 +803,11 @@
                         <span class="project-tag">IA & Juridique</span>
                     </div>
                     <h3>FasoX IA - Assistant Juridique Intelligent</h3>
-                    <p class="project-description">Conception d'une plateforme d'intelligence juridique basée sur le RAG, utilisant des APIs LLM pour l'analyse du droit burkinabè[cite: 1].</p>
+                    <p class="project-description">Conception d'une plateforme d'intelligence juridique basée sur le RAG, utilisant des APIs LLM pour l'analyse du droit burkinabè.</p>
                     <ul class="project-features">
-                        <li>Indexation vectorielle sémantique de plus de 1 000 textes juridiques avec pgvector et PostgreSQL[cite: 1].</li>
-                        <li>Développement d'une application mobile Flutter (Android) connectée via API REST, avec streaming des réponses en temps réel[cite: 1].</li>
-                        <li>Déploiement conteneurisé (Docker Compose) sur VPS Linux, avec intégration continue via GitHub Actions[cite: 1].</li>
+                        <li>Indexation vectorielle sémantique de plus de 1 000 textes juridiques avec pgvector et PostgreSQL.</li>
+                        <li>Développement d'une application mobile Flutter (Android) connectée via API REST, avec streaming des réponses en temps réel.</li>
+                        <li>Déploiement conteneurisé (Docker Compose) sur VPS Linux, avec intégration continue via GitHub Actions.</li>
                     </ul>
                     <div class="tech-tags">
                         <span class="tech-tag">Django</span>
@@ -818,9 +826,9 @@
                         <span class="project-tag">Automatisation IA</span>
                     </div>
                     <h3>EasyCv - Générateur de CV par IA</h3>
-                    <p class="project-description">Création d'une plateforme d'automatisation de CV exploitant l'API Groq LLM pour l'optimisation dynamique du contenu[cite: 1].</p>
+                    <p class="project-description">Création d'une plateforme d'automatisation de CV exploitant l'API Groq LLM pour l'optimisation dynamique du contenu.</p>
                     <ul class="project-features">
-                        <li>Architecture d'un backend Django robuste, couplé à un environnement conteneurisé sous Docker[cite: 1].</li>
+                        <li>Architecture d'un backend Django robuste, couplé à un environnement conteneurisé sous Docker.</li>
                         <li>Optimisation et structuration intelligente des données professionnelles.</li>
                     </ul>
                     <div class="tech-tags">
@@ -838,9 +846,9 @@
                         <span class="project-status">En cours</span>
                     </div>
                     <h3>Novera</h3>
-                    <p class="project-description">Application de bureau gérant les étudiants, les notes, les salles de classe et les rôles utilisateurs[cite: 1].</p>
+                    <p class="project-description">Application de bureau gérant les étudiants, les notes, les salles de classe et les rôles utilisateurs.</p>
                     <ul class="project-features">
-                        <li>Connexion de l'interface utilisateur à un backend Spring Boot garantissant la persistance et la fiabilité des données[cite: 1].</li>
+                        <li>Connexion de l'interface utilisateur à un backend Spring Boot garantissant la persistance et la fiabilité des données.</li>
                         <li>Gestion modulaire et sécurisée des rôles et des accès utilisateurs.</li>
                     </ul>
                     <div class="tech-tags">
@@ -851,23 +859,24 @@
                     </div>
                 </div>
 
-                <!-- Projet 4 : Reconnaissance Faciale (ASI HUB) -->
+                <!-- Projet 4 : Système de Gestion Immobilière (Projet Intégrateur U-AUBEN) -->
                 <div class="project-card">
                     <div class="project-header">
-                        <span class="project-tag">Computer Vision</span>
-                        <span class="project-status">En cours</span>
+                        <span class="project-tag">Projet Intégrateur U-AUBEN</span>
+                        <span class="project-status">Réalisé</span>
                     </div>
-                    <h3>Système de Reconnaissance Faciale</h3>
-                    <p class="project-description">Développement d'un système de reconnaissance faciale intelligent mené dans le cadre de la formation et des activités au sein d'ASI HUB.</p>
+                    <h3>Système de Gestion Immobilière</h3>
+                    <p class="project-description">Plateforme web universitaire de gestion immobilière développée en Django dans le cadre du projet intégrateur (U-AUBEN)[cite: 5], modélisée par objets via UML.</p>
                     <ul class="project-features">
-                        <li>Structure de développement : ASI HUB.</li>
-                        <li>Mise en place de pipelines de traitement d'images et d'identification biométrique.</li>
-                        <li>Projet en cours de développement actif.</li>
+                        <li>Module Client : Enregistrement, consultation sécurisée des propriétés (sans exposition des bailleurs), gestion des favoris et prise de rendez-vous[cite: 6].</li>
+                        <li>Module Bailleur : Enregistrement des propriétaires, proposition de biens (types, options de vente/location, tarifs et photos)[cite: 7].</li>
+                        <li>Module Employés : Gestion par les agents commerciaux et supervision centralisée par le manager (affectation des clients, statistiques et édition d'états)[cite: 7].</li>
                     </ul>
                     <div class="tech-tags">
                         <span class="tech-tag">Python</span>
-                        <span class="tech-tag">OpenCV</span>
-                        <span class="tech-tag">Deep Learning</span>
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">UML</span>
+                        <span class="tech-tag">PostgreSQL</span>
                     </div>
                 </div>
 
@@ -935,18 +944,19 @@
         <div class="footer-inner">
             <div class="footer-col">
                 <h4>Elvis Sebgo</h4>
-                <p>Développeur Full-Stack Web & Mobile Junior[cite: 1]. Passionné par l'ingénierie logicielle et l'intelligence artificielle.</p>
+                <p>Développeur Full-Stack Web & Mobile. Passionné par l'ingénierie logicielle et l'intelligence artificielle.</p>
             </div>
             <div class="footer-col">
                 <h4>Contact</h4>
-                <p>Ouagadougou, Burkina Faso[cite: 1]</p>
-                <p>+226 54 79 14 68[cite: 1]</p>
-                <a href="mailto:develvis76@gmail.com">develvis76@gmail.com[cite: 1]</a>
+                <p>Ouagadougou, Burkina Faso</p>
+                <p>+226 54 79 14 68</p>
+                <a href="mailto:develvis76@gmail.com">develvis76@gmail.com</a>
             </div>
             <div class="footer-col">
                 <h4>Liens</h4>
-                <a href="https://github.com/DEVELVIS54" target="_blank">GitHub (DEVELVIS54)[cite: 1]</a>
-                <a href="https://develvis54.github.io/portfolio_final" target="_blank">Portfolio en ligne[cite: 1]</a>
+                <a href="https://github.com/DEVELVIS54" target="_blank">GitHub (DEVELVIS54)</a>
+                <a href="https://www.linkedin.com/in/elvis-sebgo-19164b422/" target="_blank">LinkedIn</a>
+                <a href="https://develvis54.github.io/portfolio_final" target="_blank">Portfolio en ligne</a>
             </div>
         </div>
         <div class="footer-bottom">
