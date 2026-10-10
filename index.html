@@ -138,14 +138,16 @@
             gap: 40px;
         }
         
+        /* Agrandissement de la photo de profil (260px x 260px) */
         .hero-image {
-            width: 200px;
-            height: 200px;
+            width: 260px;
+            height: 260px;
             border-radius: 50%;
             overflow: hidden;
             border: 4px solid var(--orange);
             background: var(--orange);
             animation: float-hero 3s ease-in-out infinite;
+            box-shadow: 0 12px 32px rgba(232, 98, 44, 0.2);
         }
         
         @keyframes float-hero {
@@ -640,6 +642,10 @@
             .hero-text h1 {
                 font-size: 28px;
             }
+            .hero-image {
+                width: 200px;
+                height: 200px;
+            }
             .hero-cta {
                 flex-direction: column;
             }
@@ -670,7 +676,8 @@
     <header class="hero">
         <div class="wrap hero-content">
             <div class="hero-image">
-                <img src="data:image/png;base64,..." alt="Elvis Sebgo" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'><rect width=\'100%\' height=\'100%\' fill=\'%23E8622C\'/><text x=\'50%\' y=\'50%\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'white\' font-size=\'20\' font-family=\'sans-serif\'>Elvis Sebgo</text></svg>'">
+                <!-- Votre photo de profil exacte issue du fichier partagé -->
+                <img src="WhatsApp Image 2026-08-05 at 00.08.55.jpeg" alt="Elvis Sebgo">
             </div>
             <div class="hero-text">
                 <h1>Développeur Full-Stack <span class="highlight">Web & Mobile</span></h1>
@@ -949,7 +956,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Elvis Sebgo. Tous droits réservés. Design et photo d'origine préservés.</p>
+            <p>&copy; 2026 Elvis Sebgo. Tous droits réservés.</p>
         </div>
     </footer>
 
