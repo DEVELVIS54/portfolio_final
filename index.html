@@ -235,104 +235,6 @@
             border-color: var(--orange);
             color: var(--orange);
         }
-        /* MARKETING SECTION */
-        
-        .marketing {
-            padding: 120px 0;
-            background: linear-gradient(135deg, rgba(232, 98, 44, 0.05) 0%, rgba(217, 165, 33, 0.05) 100%);
-        }
-        
-        .marketing h2 {
-            font-size: clamp(2rem, 5vw, 3rem);
-            margin-bottom: 60px;
-            text-align: center;
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
-            line-height: 1.2;
-        }
-        
-        .marketing-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-            margin-bottom: 80px;
-        }
-        
-        .marketing-text {
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
-        }
-        
-        .marketing-text p {
-            font-size: 16px;
-            line-height: 1.8;
-            color: var(--muted);
-        }
-        
-        .marketing-text strong {
-            color: var(--ink);
-            font-weight: 600;
-        }
-        
-        .marketing-benefit {
-            display: flex;
-            gap: 16px;
-            align-items: flex-start;
-            padding: 16px;
-            background: var(--card);
-            border-radius: 12px;
-            border-left: 4px solid var(--orange);
-        }
-        
-        .marketing-benefit-icon {
-            font-size: 24px;
-            flex-shrink: 0;
-        }
-        
-        .marketing-benefit-text {
-            flex: 1;
-        }
-        
-        .marketing-benefit h3 {
-            font-size: 15px;
-            margin-bottom: 4px;
-            color: var(--ink);
-        }
-        
-        .marketing-benefit p {
-            font-size: 13px;
-            color: var(--muted);
-            margin: 0;
-        }
-        
-        .marketing-image {
-            border-radius: 16px;
-            overflow: hidden;
-            background: linear-gradient(135deg, var(--orange), var(--gold));
-            padding: 40px;
-            text-align: center;
-            min-height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            gap: 24px;
-            color: white;
-        }
-        
-        .marketing-image h3 {
-            font-size: 28px;
-            margin: 0;
-        }
-        
-        .marketing-image p {
-            font-size: 16px;
-            margin: 0;
-            opacity: 0.9;
-        }
         /* TECHNOLOGIES SHOWCASE */
         
         .tech-showcase-section {
@@ -365,33 +267,7 @@
             gap: 12px;
             min-height: 160px;
             cursor: pointer;
-            animation: scaleIn 0.6s ease-out forwards;
-            opacity: 0;
         }
-        
-        @keyframes scaleIn {
-            from {
-                opacity: 0;
-                transform: scale(0.9);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-        
-        .tech-showcase-card:nth-child(1) { animation-delay: 0.05s; }
-        .tech-showcase-card:nth-child(2) { animation-delay: 0.1s; }
-        .tech-showcase-card:nth-child(3) { animation-delay: 0.15s; }
-        .tech-showcase-card:nth-child(4) { animation-delay: 0.2s; }
-        .tech-showcase-card:nth-child(5) { animation-delay: 0.25s; }
-        .tech-showcase-card:nth-child(6) { animation-delay: 0.3s; }
-        .tech-showcase-card:nth-child(7) { animation-delay: 0.35s; }
-        .tech-showcase-card:nth-child(8) { animation-delay: 0.4s; }
-        .tech-showcase-card:nth-child(9) { animation-delay: 0.45s; }
-        .tech-showcase-card:nth-child(10) { animation-delay: 0.5s; }
-        .tech-showcase-card:nth-child(11) { animation-delay: 0.55s; }
-        .tech-showcase-card:nth-child(12) { animation-delay: 0.6s; }
         
         .tech-showcase-card:hover {
             border-color: var(--orange);
@@ -443,15 +319,7 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
-            animation: fadeInUp 0.8s ease-out forwards;
-            opacity: 0;
         }
-        
-        .project-card:nth-child(1) { animation-delay: 0.1s; }
-        .project-card:nth-child(2) { animation-delay: 0.2s; }
-        .project-card:nth-child(3) { animation-delay: 0.3s; }
-        .project-card:nth-child(4) { animation-delay: 0.4s; }
-        .project-card:nth-child(5) { animation-delay: 0.5s; }
         
         .project-card:hover {
             border-color: var(--orange);
@@ -775,9 +643,6 @@
             .hero-cta {
                 flex-direction: column;
             }
-            .marketing-content {
-                grid-template-columns: 1fr;
-            }
             .projects-grid {
                 grid-template-columns: 1fr;
             }
@@ -805,7 +670,7 @@
     <header class="hero">
         <div class="wrap hero-content">
             <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" alt="Elvis Sebgo">
+                <img src="data:image/png;base64,..." alt="Elvis Sebgo" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'><rect width=\'100%\' height=\'100%\' fill=\'%23E8622C\'/><text x=\'50%\' y=\'50%\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'white\' font-size=\'20\' font-family=\'sans-serif\'>Elvis Sebgo</text></svg>'">
             </div>
             <div class="hero-text">
                 <h1>Développeur Full-Stack <span class="highlight">Web & Mobile</span></h1>
@@ -826,13 +691,13 @@
                     <h2>Profil Professionnel</h2>
                 </div>
                 <div class="presentation-content">
-                    <p class="presentation-intro">Développeur full-stack web et mobile junior, orienté vers le développement d'applications et l'intelligence artificielle.</p>
-                    <p class="presentation-text">Conçoit des applications complètes : backends Django et Spring Boot, applications mobiles Flutter, bases de données PostgreSQL, ainsi que des solutions d'IA intégrant des APIs LLM, le RAG et la recherche vectorielle (pgvector), déployées avec Docker et CI/CD. Rigoureux, autonome et adaptable, il est animé par l'apprentissage continu et le travail en équipe.</p>
+                    <p class="presentation-intro">Développeur full-stack web et mobile junior, orienté vers le développement d'applications et l'intelligence artificielle[cite: 1].</p>
+                    <p class="presentation-text">Conçoit des applications complètes : backends Django et Spring Boot, applications mobiles Flutter, bases de données PostgreSQL, ainsi que des solutions d'IA intégrant des APIs LLM, le RAG et la recherche vectorielle (pgvector), déployées avec Docker et CI/CD[cite: 1]. Rigoureux, autonome et adaptable, il est animé par l'apprentissage continu et le travail en équipe[cite: 1].</p>
                     
                     <div class="presentation-highlights">
                         <div class="highlight-item">
                             <span class="highlight-label">Formation</span>
-                            <span class="highlight-value">Licence 3 en Génie Logiciel — U-AUBEN (en cours)</span>
+                            <span class="highlight-value">Licence 3 en Génie Logiciel — U-AUBEN (en cours)[cite: 1]</span>
                         </div>
                         <div class="highlight-item">
                             <span class="highlight-label">Formation Pratique</span>
@@ -1084,7 +949,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Elvis Sebgo. Tous droits réservés. Design préservé à l'identique.</p>
+            <p>&copy; 2026 Elvis Sebgo. Tous droits réservés. Design et photo d'origine préservés.</p>
         </div>
     </footer>
 
